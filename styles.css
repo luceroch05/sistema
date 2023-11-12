@@ -1,0 +1,107 @@
+/* Estilo para ocultar el panel de inicio de sesión */
+
+.panel-login {
+    display: block;
+}
+
+/* Estilo para mostrar el nuevo panel */
+.panel-interfaz {
+    display: none;
+}
+
+/*Cambiar fondo a color negro*/
+body{
+    background-color: black;
+    background: linear-gradient(to bottom, black ,rgb(34, 29, 29));
+}
+
+/*Centrar contenido en el panel Login*/
+.panel-login{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*Inputs y Img*/
+.panel-login img{
+    margin-bottom: 20px;
+}
+
+/*Barra Lateral*/
+.sidebar-class{
+    display: none;
+}
+
+/*Estilos para los contenedores Input*/
+.input-container{
+    margin-bottom: 20px;
+}
+
+/*Imagen*/
+.mi-imagen{
+    width: 150px; /*Ancho*/
+    height: auto; /*Ajusta la proporcion de la img acorde al ancho*/
+}
+
+.panel-login{
+    margin-bottom: 10px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+.contenedor{
+    position: relative;
+    width: 400px;
+
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+~
+}
+.input-container{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+
+.input-container label{
+    position: absolute;
+    top: 50%;
+    left:5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .3s;
+    font-weight: bold;
+
+}
+input:focus~ label,
+input:valid~ label{
+    top:  -10px;
+
+}
+.input-container input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    padding: -35 0 5px;
+    color: #fff;
+    outline: none;
+}
