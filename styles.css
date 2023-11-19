@@ -115,3 +115,6 @@ input:valid~ label{
     color: #fff;/*Define el color de texto*/
     outline: none;/*Elimina el contorno al enfocar*/
 }
+.panel-interfaz{
+    color: #fff;
+}
