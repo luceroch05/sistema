@@ -1,0 +1,120 @@
+/* Estilo para ocultar el panel de inicio de sesión */
+
+.panel-login {
+    display: block;
+}
+
+/* Estilo para mostrar el nuevo panel */
+.panel-interfaz {
+    display: none;
+}
+
+/*Cambiar fondo a color negro*/
+body{
+    background-color: black;
+    background: linear-gradient(to bottom, black ,rgb(34, 29, 29));
+}
+
+/*Centrar contenido en el panel Login*/
+.panel-login{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*Inputs y Img*/
+.panel-login img{
+    margin-bottom: 20px;
+}
+
+/*Barra Lateral*/
+.sidebar-class{
+    display: none;
+}
+
+/*Estilos para los contenedores Input*/
+.input-container{
+    margin-bottom: 20px;
+}
+
+/*Imagen*/
+.mi-imagen{
+    width: 150px; /*Ancho*/
+    height: auto; /*Ajusta la proporcion de la img acorde al ancho*/
+}
+
+/*Margen de 10px a cualquier elemento de la clase .panel-login*/
+.panel-login{
+    margin-bottom: 10px;/*Crea un espacio adicional debajo del elemento para separarlo visualmente de otros elementos*/
+}
+
+/*Estilos a todas las etiquetas section*/
+section{
+    display: flex;/*Disenio flexible para los elementos hijo*/
+    justify-content: center;/*Centra los elementos hijos horizontalmente*/
+    align-items: center;/*Centra los elementos hijos verticalmente*/
+    width: 100%;/*Hace que la seccion ocupe el 100% del ancho disponible*/
+    min-height: 100vh;/*Establece una altura mínima igual a la altura de la ventana del navegador*/
+    background-position: center;/*Ajusta la posición del fondo, si se especifica uno*/
+    background-size: cover;/*Ajusta el tamaño del fondo, si se especifica uno*/
+
+}
+
+/*Estilos clase contenedor*/
+.contenedor{
+    position: relative;/*Establece la posición del contenedor en relación a su posición normal*/
+    width: 400px;/*Define las dimensiones del contenedor*/
+    height: 450px;/*Define las dimensiones del contenedor*/
+    display: flex;/*Utiliza flexbox para el diseño interior*/
+    justify-content: center;/*Centra el contenido tanto horizontal como verticalmente*/
+    align-items: center;/*Centra el contenido tanto horizontal como verticalmente*/ 
+
+
+}
+
+/*Estilos para contenedores de entrada*/
+.input-container{
+    position: relative;/*Permite posicionar los elementos hijos absolutamente en relación a este*/
+    margin: 30px 0;/*Aniade un margen vertical*/
+    width: 300px;/*Define el ancho*/
+    border-bottom: 2px solid #fff;/*Define el borde inferior*/
+}
+
+/*Estiliza las etiquetas dentro de input-container*/
+.input-container label{
+    position: absolute;/*Posiciona la etiqueta absolutamente dentro de su contenedor*/
+    top: 50%;/*Centra la etiqueta verticalmente*/
+    left:5px;/*Centra la etiqueta verticalmente*/
+    transform: translateY(-50%);/*Centra la etiqueta verticalmente*/
+    color: #fff;/*Define el color del texto*/
+    font-size: 1rem;/*Establece el tamaño del texto y evita que la etiqueta bloquee eventos del mouse*/
+    pointer-events: none;/*Establece el tamaño del texto y evita que la etiqueta bloquee eventos del mouse*/
+    transition: .3s;/*Aniade una transición suave y hace el texto en negrita*/
+    font-weight: bold;/*Añade una transición suave y hace el texto en negrita*/
+
+}
+
+/*Cambia la posicion de las etiquetas*/
+input:focus~ label,
+input:valid~ label{
+    top:  -10px;/*Cambia la posición de las etiquetas cuando el campo de entrada está enfocado o contiene un valor válido, moviendo la etiqueta hacia arriba*/
+
+}
+
+/*Estilos específicos para los campos de entrada en input-container*/
+.input-container input{
+    width: 100%;/*Establece dimensiones*/
+    height: 50px;/*Establece dimensiones*/
+    background-color: transparent;/*Hace el fondo transparente*/
+    border: none;/*Elimina el borde*/
+    font-size: 1rem;/*Ajusta el tamaño del texto*/
+    padding: -35 0 5px;/*Ajusta el relleno*/
+    color: #fff;/*Define el color de texto*/
+    outline: none;/*Elimina el contorno al enfocar*/
+}
+.panel-interfaz{
+    color: #fff;
+}
