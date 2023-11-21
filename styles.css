@@ -1,11 +1,13 @@
 /* Estilo para ocultar el panel de inicio de sesión */
 
-.panel-login {
+.panel-login 
+{
     display: block;
 }
 
 /* Estilo para mostrar el nuevo panel */
-.panel-interfaz {
+.panel-interfaz 
+{
     display: none;
 }
 
@@ -117,4 +119,38 @@ input:valid~ label{
 }
 .panel-interfaz{
     color: #fff;
+    margin: 0;
+    padding :0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.panel-interfaz .navegacion {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.navegacion ul li:hover a{
+    color: white;
+    display: block;
+    min-width: 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navegacion ul li a icon .title
+{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+.navegacion ul li:nth-child(1){
+    margin-bottom: 40px;
 }
