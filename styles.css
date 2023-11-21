@@ -120,3 +120,37 @@ input:valid~ label{
 .panel-interfaz{
     color: #fff;
 }
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #E0E0E0; /* Ajusta el color de fondo según tu diseño */
+    border-radius: 20px; /* Ajusta el radio del borde según tu diseño */
+    padding: 20px;
+    max-width: 600px; /* Ajusta según el tamaño que prefieras */
+    margin: auto;
+}
+
+.welcome-message h1 {
+    margin: 0;
+    color: #333; /* Ajusta el color según tu diseño */
+    font-size: 24px; /* Ajusta el tamaño de fuente según tu diseño */
+}
+
+.welcome-message p {
+    color: #666; /* Ajusta el color según tu diseño */
+    font-size: 18px; /* Ajusta el tamaño de fuente según tu diseño */
+}
+
+.welcome-image img {
+    width: 100px; /* Ajusta el ancho de la imagen según tu diseño */
+    height: auto;
+}
+
+/* Si quieres que tu diseño sea responsive, considera usar media queries */
+@media (max-width: 768px) {
+    .welcome-container {
+        flex-direction: column;
+    }
+}
