@@ -117,6 +117,7 @@ input:valid~ label{
     color: #fff;/*Define el color de texto*/
     outline: none;/*Elimina el contorno al enfocar*/
 }
+
 .panel-interfaz{
     color: #fff;
 }
@@ -153,4 +154,8 @@ input:valid~ label{
     .welcome-container {
         flex-direction: column;
     }
+}
+
+.navegacion ul li:hover a{
+    color:white;
 }
