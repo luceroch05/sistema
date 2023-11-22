@@ -192,3 +192,34 @@ input:valid~ label{
         display: inline;
     }
 }
+
+.curso1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 200px;
+ 
+   }
+
+   .curso2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 300px;
+ 
+   }
+   
+   .curso3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 200px;
+    top: 400px;
+ 
+   }
+
