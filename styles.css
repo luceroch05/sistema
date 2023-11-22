@@ -2,10 +2,11 @@ body {
     margin: 0;
     padding: 0;
     /* background: linear-gradient(to bottom, black, rgb(34, 29, 29)); */
-    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+    background: linear-gradient(to bottom, #000000, #2c2c2c);
     color: #fff;
     font-family: 'Arial', sans-serif;
-    background-color: black;
+
+
 }
 
 .contenedor{
@@ -201,3 +202,5 @@ input:valid~ label{
 .curso1 p, .curso2 p, .curso3 p {
     margin-top: -5px;
 }
+
+
