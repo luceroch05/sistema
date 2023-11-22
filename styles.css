@@ -88,6 +88,8 @@ input:valid~ label{
     color: #fff;
 }
 
+
+
 .indice-contenedor {
     position: relative;
 }
@@ -199,7 +201,13 @@ input:valid~ label{
     align-items: center;
     position: absolute;
     left: 200px;
-    top: 200px;
+    top: 200px;}
+    /*rectangulo para curso*/
+    .curso{ 
+    width: 400px; 
+    height: 70px; 
+    background-color: #b3afaf5b;
+    border-radius: 10px;
  
    }
 
