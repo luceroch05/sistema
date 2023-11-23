@@ -89,6 +89,8 @@ input:valid~ label{
     color: #fff;
 }
 
+
+
 .indice-contenedor {
     position: relative;
 }
@@ -181,26 +183,37 @@ input:valid~ label{
     height: auto;
 }
 
+    /*rectangulo para curso*/
+.curso{ 
+    width: 400px; 
+    height: 70px; 
+    background-color: #b3afaf5b;
+    border-radius: 10px;
+}
+
+.curso1 h1, .curso2 h1, .curso3 h1,
+.curso1 p, .curso2 p, .curso3 p {
+    margin: 0;
+}
+
 .curso1, .curso2, .curso3 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    justify-content: center;
+    align-items: center; 
+    width: 400px; /* Ancho del cajón */
+    height: 100px; /* Altura del cajón */
+    border-radius: 10px;
+    background-color: #000;
     position: absolute;
-    left: 200px;
-    gap: 10px; 
+    left: 50%; /* Centra el cajón en el eje X */
+    transform: translateX(-50%); /* Desplazamiento adicional para centrar exactamente en el eje X */
+    gap: 10px; /* Espacio entre elementos internos si es necesario */
 }
 
-.curso1 { top: 200px; }
-.curso2 { top: 300px; }
+.curso1 { top: 200px; } /* Posición en el eje Y para el primer cajón */
+.curso2 { top: 300px; } /* Posición en el eje Y para el segundo cajón */
 .curso3 { top: 400px; }
-
-.curso1 h1, .curso2 h1, .curso3 h1 {
-    margin-bottom: 1px; 
-}
-
-.curso1 p, .curso2 p, .curso3 p {
-    margin-top: -5px;
-}
 
 
 .panel-curso{
