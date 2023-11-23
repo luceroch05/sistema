@@ -6,7 +6,6 @@ body {
     color: #fff;
     font-family: 'Arial', sans-serif;
 
-
 }
 
 .contenedor{
@@ -204,3 +203,24 @@ input:valid~ label{
 }
 
 
+.panel-curso{
+display: none;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.special-cell {
+    background-color: #ffd53e; /* Color de fondo de la celda especial */
+    font-weight: bold; /* Texto en negrita para destacar */
+    color: #333; /* Color del texto */
+}

@@ -1,104 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Web Notas</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
 
 <body>
-<section>
-<div class="contenedor">
-    <div class="panel-login">
-        <img src= "imagenes\\user.png" class="mi-imagen">
-        <form action="" method="post">
-            <div class="input-container">
-                <input type="text" id="username"  name="username" required>
-                <label for="#">Usuario</label>
-            </div>
-            <div class="input-container">
-                <input type="password" id="password"  name="password" required >
-                <label for="#">Contrasenia</label>
-            </div><br>
-            <button type="button" id="login-button">Ingresar</button>
-        </form>
-    </div>
-
-</div>
-
-    <div class="panel-interfaz">
-        <!-- Contenido del nuevo panel -->
-
-        <div class="indice-contenedor">
-            <div class="indice">    <div class = "navegacion">
-                <ul>
-                    <li>
-                        <a href = "#">
-                            <span class = "icon"><ion-icon name="home-outline"></ion-icon></span>
-                            <span class = "title">Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#">
-                            <span class = "icon"><ion-icon name="stats-chart-outline"></ion-icon></span>
-                            <span class = "title">Notas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#">
-                            <span class = "icon"><ion-icon name="person-circle-outline"></ion-icon></span>
-                            <span class = "title">Perfil</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#">
-                            <span class = "icon"><ion-icon name="help-circle-outline"></ion-icon></span>
-                            <span class = "title">Ayuda</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "#">
-                            <span class = "icon"><ion-icon name="close-circle-outline"></ion-icon></span>
-                            <span class = "title">Cerrar</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="cont-bienvenido">
-            <div class="welcome-message">
-                <h1>Hola Leo!</h1>
-                <p>Es bueno verte de nuevo.</p>
-            </div>
-            <div class="welcome-image">
-                <img src="imagenes/UsuarioVector.jpg" alt="VectorBienvenidaUsuario">
+    <section>
+        <div class="contenedor">
+            <div class="panel-login">
+                <img src="imagenes/user.png" class="mi-imagen" alt="Imagen de usuario">
+                <form action="" method="post">
+                    <div class="input-container">
+                        <input type="text" id="username" name="username" required>
+                        <label for="username">Usuario</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Contraseña</label>
+                    </div><br>
+                    <button type="button" id="login-button">Ingresar</button>
+                </form>
             </div>
         </div>
 
-        <div class="cursos-container">
-            <div class="curso1">
-                <h1>Curso1</h1>
-                <p>Descripción del curso 1</p>
-            </div>
-            <div class="curso2">
-                <h1>Curso2</h1>
-                <p>Descripción del curso 2</p>
-            </div>
-            <div class="curso3">
-                <h1>Curso3</h1>
-                <p>Descripción del curso 3</p>
-            </div>
-        </div>        
-    </div>
+        <div class="panel-interfaz">
+            <!-- Contenido del nuevo panel -->
 
+            <div class="indice-contenedor">
+                <div class="indice">
+                    <div class="navegacion">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                    <span class="title">Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></span>
+                                    <span class="title">Notas</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                                    <span class="title">Perfil</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+                                    <span class="title">Ayuda</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon"><ion-icon name="close-circle-outline"></ion-icon></span>
+                                    <span class="title">Cerrar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-bienvenido">
+                <div class="welcome-message">
+                    <h1>Hola Leo!</h1>
+                    <p>Es bueno verte de nuevo.</p>
+                </div>
+                <div class="welcome-image">
+                    <img src="imagenes/UsuarioVector.jpg" alt="VectorBienvenidaUsuario">
+                </div>
+            </div>
+
+            <div class="cursos-container">
+                <div class="curso1" id="c1">
+                    <h1>Curso1</h1>
+                    <p>Descripción del curso 1</p>
+                </div>
+                <div class="curso2" id = "c2">
+                    <h1>Curso2</h1>
+                    <p>Descripción del curso 2</p>
+                </div>
+                <div class="curso3" id = "c3">
+                    <h1>Curso3</h1>
+                    <p>Descripción del curso 3</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="panel-curso">
+                
+            <div class="panelCurso1">
+                <h2>Tabla de Notas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="special-cell">ID</th>
+                            <th>Alumno</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="special-cell">1</td>
+                            <td>John Zorrilla</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                                           
+                        </tr>
+                        <tr>
+                            <td class="special-cell">2</td>
+                            <td>Lucero Changra</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td class="special-cell">3</td>
+                            <td>Leonardo Pizarro</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="btnanterior">Anterior</button>
+            </div>
+
+            <div class="panelCurso2" >
+                <h2>Tabla de Notas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="special-cell">ID</th>
+                            <th>Alumno</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="special-cell">1</td>
+                            <td>John Zorrilla</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                                           
+                        </tr>
+                        <tr>
+                            <td class="special-cell">2</td>
+                            <td>Lucero Changra</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td class="special-cell">3</td>
+                            <td>Leonardo Pizarro</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="btnanterior2">Anterior</button>
+
+            </div>
+
+            <div class="panelCurso3">
+                <h2>Tabla de Notas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="special-cell">ID</th>
+                            <th>Alumno</th>
+                            <th>Nota 1</th>
+                            <th>Nota 2</th>
+                            <th>Nota 3</th>
+                            <th>Promedio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="special-cell">1</td>
+                            <td>John Zorrilla</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                                           
+                        </tr>
+                        <tr>
+                            <td class="special-cell">2</td>
+                            <td>Lucero Changra</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+
+                        <tr>
+                            <td class="special-cell">3</td>
+                            <td>Leonardo Pizarro</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="btnanterior3">Anterior</button>
+
+            </div>
+        </div>
+    </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
-</section>
-<script src = "logica.js"></script>
+    <script src="logica.js"></script>
 </body>
 
 </html>
