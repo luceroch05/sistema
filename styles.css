@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, black, rgb(34, 29, 29));
+    /* background: linear-gradient(to bottom, black, rgb(34, 29, 29)); */
+    background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
     color: #fff;
     font-family: 'Arial', sans-serif;
     background-color: black;
@@ -100,25 +101,36 @@ input:valid~ label{
 }
 
 .navegacion {
-    width: 80px;
-    height: 100vh;
-    background-color: #000;
-    color: #fff; 
+    width: 60px;
+    height: auto;
+    background-color: #fff;
+    color: #000; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px 0; 
+    justify-content: start;
+    padding: 10px 0; 
     position: fixed;
-    top: 0;
+    top: 350px;
     left: 0;
     border-radius: 0 20px 20px 0; 
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .navegacion .icon {
-    font-size: 24px;
-    margin-bottom: 20px; 
+    font-size: 25px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+.navegacion .icon:hover{
+    transform: scale(1.5);
+}
+
+.navegacion li:hover{
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navegacion ul {
@@ -128,10 +140,11 @@ input:valid~ label{
 }
 
 .navegacion li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 5px 0;
     display: block;
+    font-size: 0.8rem;
 }
 
 .navegacion .title {
@@ -146,13 +159,13 @@ input:valid~ label{
     margin: auto;
     justify-content: center;
     text-align: center;
-    border-radius: 20px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    background: #fff; /* Fondo blanco para el contenedor principal */
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: #fff; 
     z-index: 100;
-    margin-left: 250px; /* Ajusta esto para que no se solape con la barra lateral */
-    width: calc(100% - 250px); /* Ajusta esto según el ancho de tu barra lateral */
-    height: auto; /* O un valor fijo si deseas una altura específica */
+    margin-left: 250px; 
+    width: calc(100% - 250px); 
+    height: auto;
     padding: 20px;
 }
 
@@ -170,29 +183,13 @@ input:valid~ label{
     height: auto;
 }
 
-@media (max-width: 768px) {
-    .navegacion {
-        width: 100%;
-        position: relative;
-        margin-bottom: 0;
-        height: auto;
-        flex-direction: row;
-        padding: 10px;
-        border-radius: 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    }
-    .cont-bienvenido {
-        margin-left: 0;
-        width: 100%;
-        flex-direction: column;
-    }
-    .navegacion .icon {
-        margin: 0;
-    }
-
-    .navegacion .title {
-        display: inline;
-    }
+.curso1, .curso2, .curso3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: absolute;
+    left: 200px;
+    gap: 10px; 
 }
 
 .curso1 {
@@ -201,7 +198,9 @@ input:valid~ label{
     align-items: center;
     position: absolute;
     left: 200px;
-    top: 200px;}
+    top: 200px;
+
+}
     /*rectangulo para curso*/
     .curso{ 
     width: 400px; 
@@ -210,24 +209,21 @@ input:valid~ label{
     border-radius: 10px;
  
    }
+.curso1 { top: 200px; }
+.curso2 { top: 300px; }
+.curso3 { top: 400px; }
 
-   .curso2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 200px;
-    top: 300px;
- 
-   }
+.curso1 h1, .curso2 h1, .curso3 h1 {
+    margin-bottom: 1px; 
+}
+
+.curso1 p, .curso2 p, .curso3 p {
+    margin-top: -5px;
+}
+.curso1, .curso2 ,.curso3{
+    width: 400px; /* Ancho del rectángulo, puedes ajustarlo según tus necesidades */
+    height: 100px; /* Altura del rectángulo, puedes ajustarlo según tus necesidades */
+    border-radius: 10px;
+    background-color: #000;
    
-   .curso3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 200px;
-    top: 400px;
- 
-   }
-
+}
