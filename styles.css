@@ -211,9 +211,19 @@ input:valid~ label{
     gap: 10px; /* Espacio entre elementos internos si es necesario */
 }
 
-.curso1 { top: 200px; } /* Posición en el eje Y para el primer cajón */
-.curso2 { top: 300px; } /* Posición en el eje Y para el segundo cajón */
-.curso3 { top: 400px; }
+.curso1 { 
+    top: 200px;
+    background-image: url('imagenes/java_horizontal_logo_icon_167858.png'); /* Ruta de la imagen de fondo del curso1 */
+    background-size: 100% 100%;
+    
+} /* Posición en el eje Y para el primer cajón */
+.curso2 { top: 300px;
+    background-image: url('imagenes/bigdata.jpg'); /* Ruta de la imagen de fondo del curso1 */
+    background-size: 100% 100%; } /* Posición en el eje Y para el segundo cajón */
+.curso3 { top: 400px;
+    background-image: url('imagenes/git.png'); /* Ruta de la imagen de fondo del curso1 */
+    background-size: 100% 100%; } /* Posición en el eje Y para el segundo cajón */
+
 
 
 .panel-curso{
