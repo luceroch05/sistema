@@ -8,6 +8,8 @@ body {
 
 }
 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 .contenedor{
     position: relative;
     height: 450px;
@@ -69,7 +71,9 @@ input:valid~ label{
     top:  -10px;
 
 }
-
+h1, p, h2, th, label {
+font-family: 'Poppins';
+}
 .input-container input{
     width: 100%;
     height: 50px;
@@ -183,9 +187,9 @@ input:valid~ label{
 }
 
 
-.curso1 h1, .curso2 h1, .curso3 h1,
+.curso1 h2, .curso2 h2, .curso3 h2,
 .curso1 p, .curso2 p, .curso3 p, .curso4 p,
-.curso4 h1, .curso5 h1, .curso6 h1,
+.curso4 h2, .curso5 h2, .curso6 h2,
 .curso5 p ,  .curso6 p{
     margin: 0px;
 }
@@ -213,13 +217,13 @@ input:valid~ label{
 
 .curso1 { 
     top: 200px;
-    background-color: rgba(92, 92, 92, 0.363); /* Ruta de la imagen de fondo del curso1 */
-    ;
+    background:linear-gradient(to bottom, #2c2c2c, #636363); /* Ruta de la imagen de fondo del curso1 */
+    
     
 } /* Posición en el eje Y para el primer cajón */
 .curso2 { 
     top: 340px;
-    background-color: rgba(235, 235, 235, 0.795); /* Ruta de la imagen de fondo del curso1 */
+    background:linear-gradient(to bottom, #f0f0f0, #b4b4b4);  /* Ruta de la imagen de fondo del curso1 */
     color: black;
     } 
 
@@ -233,18 +237,21 @@ input:valid~ label{
  .curso4{
  top: 200px;
  text-align: center;
- background-color: rgba(43, 43, 43, 0.363);
- }
+ background:linear-gradient(to bottom, #252525, #4e4e4e);
+
+  }
 
  .curso5{
     top: 340px;
-    background-color: rgb(185, 185, 185);
+    background:linear-gradient(to bottom, #e7d5d5, #9e9696);
     color: black;
     }
 
 .curso6{
     top: 480px;
-    background-color: rgb(138, 138, 138);
+    background:linear-gradient(to bottom, #8a8a8a, #2e2e2e);
+
+    background-color: #8a8a8a;
  }
 
 
