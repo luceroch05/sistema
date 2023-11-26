@@ -1,6 +1,8 @@
 document.getElementById("login-button").addEventListener("click", function() {
     document.querySelector(".panel-login").style.display = "none";
     document.querySelector(".panel-interfaz").style.display = "block";
+    document.querySelector(".cursos-container").style.display = "block";
+
     document.querySelector(".navegacion").style.display = "flex";
 
 });
@@ -165,3 +167,27 @@ document.getElementById("btnanterior6").addEventListener('click', function() {
     document.querySelector(".panel-curso").style.display = "none";
     document.querySelector(".panel-interfaz").style.display = "block";
 });
+
+document.getElementById("salir").addEventListener('click', function() {
+    document.querySelector(".panel-interfaz").style.display = "none"; 
+
+    document.querySelector(".cont-bienvenido").style.display = "none"; 
+    document.querySelector(".cursos-container").style.display = "none";
+    document.querySelector(".panel-curso").style.display = "none"; 
+    document.querySelector(".panelCurso1").style.display = "none"; 
+    document.querySelector(".panelCurso2").style.display = "none"; 
+    document.querySelector(".panelCurso3").style.display = "none"; 
+    document.querySelector(".panelCurso4").style.display = "none"; 
+    document.querySelector(".panelCurso5").style.display = "none"; 
+    document.querySelector(".panelCurso6").style.display = "none"; 
+    document.querySelector(".contenedor").style.display = "block"; 
+    document.querySelector(".contenedor").style.display = "block"; 
+    document.querySelector(".panel-login").style.display = "block"; 
+    document.querySelector(".navegacion").style.display = "none"; 
+
+
+
+
+});
+
+
