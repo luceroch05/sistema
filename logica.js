@@ -2,6 +2,7 @@ document.getElementById("login-button").addEventListener("click", function() {
     document.querySelector(".panel-login").style.display = "none";
     document.querySelector(".panel-interfaz").style.display = "block";
     document.querySelector(".navegacion").style.display = "flex";
+
 });
 
 
