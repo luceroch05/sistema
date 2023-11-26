@@ -71,7 +71,7 @@ input:valid~ label{
     top:  -10px;
 
 }
-h1, p, h2, th, label {
+h1, p, h2, th, label, td {
 font-family: 'Poppins';
 }
 .input-container input{
