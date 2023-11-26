@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     /* background: linear-gradient(to bottom, black, rgb(34, 29, 29)); */
     background: linear-gradient(to bottom, #000000, #2c2c2c);
     color: #fff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins';
 
 }
 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .contenedor{
     position: relative;
@@ -299,4 +300,31 @@ th, td {
 #btnanterior:hover,#btnanterior2:hover,#btnanterior3:hover,#btnanterior4:hover,#btnanterior5:hover,#btnanterior6:hover {
     background-color: #ffffff;
     color: #000000;
+}
+.panel-user {
+    display: none;
+}
+.panel-user p.inf{
+    font-weight: bold; 
+}
+.content{
+    position: absolute;
+    background-color: #f0f0f0; /* Color de fondo del contenedor */
+    padding: 20px; /* Espaciado interno para dar espacio al texto */
+    display: inline-block; 
+    color: #333; /* Color del texto */
+    font-size: 16px;;
+    left: 60%;
+    top: 10%;
+}
+.panel-user h1{
+    position:absolute;
+    left: 10%;
+    top: 7%;
+}
+.panel-user img{
+    position:absolute;
+    left: 10%;
+    top: 10%;
+
 }
