@@ -217,10 +217,10 @@ input:valid~ label{
     background-size: 100% 100%;
     
 } /* Posición en el eje Y para el primer cajón */
-.curso2 { top: 300px;
+.curso2 { top: 320px;
     background-image: url('imagenes/bigdata.jpg'); /* Ruta de la imagen de fondo del curso1 */
     background-size: 100% 100%; } /* Posición en el eje Y para el segundo cajón */
-.curso3 { top: 400px;
+.curso3 { top: 440px;
     background-image: url('imagenes/git.png'); /* Ruta de la imagen de fondo del curso1 */
     background-size: 100% 100%; } /* Posición en el eje Y para el segundo cajón */
 
