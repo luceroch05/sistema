@@ -108,7 +108,7 @@ input:valid~ label{
     display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     padding: 10px 0; 
     position: fixed;
     top: 350px;
@@ -150,12 +150,11 @@ input:valid~ label{
 .navegacion .title {
     display: none;
 }
-
 .cont-bienvenido {
     display: flex;
     align-items: center;
     background-color: #E0E0E0;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     justify-content: center;
     text-align: center;
@@ -164,7 +163,7 @@ input:valid~ label{
     background: #fff; 
     z-index: 100;
     margin-left: 250px; 
-    width: calc(100% - 250px); 
+    width: calc(250% - 250px); 
     height: auto;
     padding: 20px;
 }
@@ -183,32 +182,33 @@ input:valid~ label{
     height: auto;
 }
 
-    /*rectangulo para curso*/
-.curso{ 
-    width: 400px; 
-    height: 70px; 
-    background-color: #b3afaf5b;
-    border-radius: 10px;
-}
 
 .curso1 h1, .curso2 h1, .curso3 h1,
-.curso1 p, .curso2 p, .curso3 p {
-    margin: 0;
+.curso1 p, .curso2 p, .curso3 p, .curso4 p,
+.curso4 h1, .curso5 h1, .curso6 h1,
+.curso5 p ,  .curso6 p{
+    margin: 0px;
 }
 
-.curso1, .curso2, .curso3 {
+.curso1, .curso2, .curso3, .curso4, .curso5, .curso6{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     width: 400px; /* Ancho del cajón */
-    height: 100px; /* Altura del cajón */
+    height: 120px; /* Altura del cajón */
     border-radius: 10px;
     background-color: #000;
     position: absolute;
     left: 50%; /* Centra el cajón en el eje X */
     transform: translateX(-50%); /* Desplazamiento adicional para centrar exactamente en el eje X */
     gap: 10px; /* Espacio entre elementos internos si es necesario */
+    margin-bottom: 20px;
+    background-size: 100% 100%;
+}
+
+.curso4, .curso5, .curso6{
+    left: 750px;
 }
 
 .curso1 { 
@@ -224,6 +224,30 @@ input:valid~ label{
     background-image: url('imagenes/git.png'); /* Ruta de la imagen de fondo del curso1 */
     background-size: 100% 100%; } /* Posición en el eje Y para el segundo cajón */
 
+
+.curso2 { top: 340px;
+    background-image: url('imagenes/bigdata.jpg'); /* Ruta de la imagen de fondo del curso1 */
+
+} 
+.curso3 { top: 480px;
+    background-image: url('imagenes/git.png'); /* Ruta de la imagen de fondo del curso1 */
+ } 
+
+ .curso4{
+ top: 200px;
+ text-align: center;
+ background-color: rgba(111, 255, 123, 0.281);
+ }
+
+ .curso5{
+    top: 340px;
+    background-color: rgb(161, 50, 50);
+    }
+
+.curso6{
+    top: 480px;
+    background-color: rgb(94, 94, 94);
+ }
 
 
 .panel-curso{
@@ -242,8 +266,32 @@ th, td {
     text-align: left;
 }
 
-.special-cell {
+.prom {
     background-color: #ffd53e; /* Color de fondo de la celda especial */
     font-weight: bold; /* Texto en negrita para destacar */
     color: #333; /* Color del texto */
+}
+
+#btnanterior,#btnanterior2,#btnanterior3,#btnanterior4,#btnanterior5,#btnanterior6{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    background-color: white;
+    transform: translateX(-50%);
+    display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid #ffffff;
+            border-radius: 5px;
+            color: #ffffff;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            cursor: pointer;
+}
+#btnanterior:hover,#btnanterior2:hover,#btnanterior3:hover,#btnanterior4:hover,#btnanterior5:hover,#btnanterior6:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
