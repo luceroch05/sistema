@@ -153,6 +153,7 @@ font-family: 'Poppins';
     display: none;
 }
 .cont-bienvenido {
+    
     display: flex;
     align-items: center;
     background-color: #E0E0E0;
@@ -167,7 +168,7 @@ font-family: 'Poppins';
     z-index: 100;
     /* margin-left: 250px;  */
     /* width: calc(105% - 250px);  */
-    width: 120%;
+    width: 126%;
     height: auto;
     /* padding: 20px; */
     padding: 0.5rem;
@@ -341,44 +342,4 @@ th, td {
 #btnExportar{
     left: 45%;
     top: 70%;
-}
-
-@media screen and (min-width: 1440px) {
-    .cont-bienvenido{
-        width: 95%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 1439px) {
-    .cont-bienvenido{
-        width: 95%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .cont-bienvenido{
-        width: 95%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .cont-bienvenido{
-        width: 95%;
-        margin-top: 1rem;
-        padding: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 480px){
-    .cont-bienvenido{
-        width: 100%;
-        margin-top: 0.5rem;
-        padding: 0.5rem;
-    }
 }
