@@ -377,3 +377,13 @@ th, td {
         padding: 0.5rem;
     }
 }
+
+
+
+.panel-estadistica{
+    display: none;
+}
+
+.reporte{
+  background-color: red;  
+}

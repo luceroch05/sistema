@@ -117,6 +117,8 @@ document.getElementById("user").addEventListener('click', function() {
 
 });
 
+
+
 document.getElementById("home").addEventListener('click', function() {
     document.querySelector(".cont-bienvenido").style.display = "flex"; 
     document.querySelector(".cursos-container").style.display = "flex"; 
@@ -135,6 +137,9 @@ document.getElementById("btnanterior").addEventListener('click', function(){
     document.querySelector(".cont-bienvenido").style.display = "flex"; 
     document.querySelector(".cursos-container").style.display = "flex"; 
     document.querySelector(".panel-curso").style.display = "none";
+    document.querySelector(".panel-user").style.display = "none";
+
+
 });
 
 document.getElementById("btnanterior2").addEventListener('click', function() {
@@ -184,4 +189,15 @@ document.getElementById("salir").addEventListener('click', function() {
 
 });
 
+
+document.getElementById("estadistica").addEventListener('click', function() {
+    document.querySelector(".cursos-container").style.display = "none";
+    document.querySelector(".panel-interfaz").style.display = "none";
+    document.querySelector(".panel-curso").style.display = "none";
+    document.querySelector(".panel-user").style.display = "none";
+    document.querySelector(".panel-estadistica").style.display = "block";
+    document.querySelector(".reporte").style.display = "block";
+
+
+});
 
