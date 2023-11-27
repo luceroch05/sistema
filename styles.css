@@ -276,9 +276,9 @@ th, td {
     color: #333; /* Color del texto */
 }
 
-#btnanterior,#btnanterior2,#btnanterior3,#btnanterior4,#btnanterior5,#btnanterior6{
+#btnanterior,#btnanterior2,#btnanterior3,#btnanterior4,#btnanterior5,#btnanterior6, #btnExportar, #login-button{
     position: absolute;
-    left: 50%;
+    left: 55%;
     top: 70%;
     background-color: white;
     transform: translateX(-50%);
@@ -295,9 +295,15 @@ th, td {
             transition: background-color 0.3s;
             cursor: pointer;
 }
-#btnanterior:hover,#btnanterior2:hover,#btnanterior3:hover,#btnanterior4:hover,#btnanterior5:hover,#btnanterior6:hover {
+
+
+#btnanterior:hover,#btnanterior2:hover,#btnanterior3:hover,#btnanterior4:hover,#btnanterior5:hover,#btnanterior6:hover, #btnExportar:hover {
     background-color: #ffffff;
     color: #000000;
+}
+
+#login-button{
+    top: 85%;
 }
 .panel-user {
     display: none;
@@ -325,4 +331,9 @@ th, td {
     left: 10%;
     top: 10%;
 
+}
+
+#btnExportar{
+    left: 45%;
+    top: 70%;
 }
