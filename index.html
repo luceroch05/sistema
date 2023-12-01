@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Web Notas</title>
-     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
     <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
     <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
- 
 </head>
 
 <body>
@@ -18,40 +17,16 @@
         <div class="indice">
             <div class="navegacion">
                 <ul>
-                    <li>
-                        <a href="#">
-                            <span class="icon" id="home"><ion-icon name="home-outline"></ion-icon></span>
-                            <span class="title">Inicio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="stats-chart-outline"></ion-icon></span>
-                            <span class="title">Notas</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon" id="user"><ion-icon name="person-circle-outline"></ion-icon></span>
-                            <span class="title">Perfil</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
-                            <span class="title">Ayuda</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="icon" id="salir"><ion-icon name="close-circle-outline"></ion-icon></span>
-                            <span class="title">Cerrar</span>
-                        </a>
-                    </li>
+                    <li><a href="#"><span class="icon" id="home"><ion-icon name="home-outline"></ion-icon></span><span class="title">Inicio</span></a></li>
+                    <li><a href="#"><span class="icon" id="estadisticas"><ion-icon name="stats-chart-outline"></ion-icon></span><span class="title">Notas</span></a></li>
+                    <li><a href="#"><span class="icon" id="user"><ion-icon name="person-circle-outline"></ion-icon></span><span class="title">Perfil</span></a></li>
+                    <li><a href="#"><span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span><span class="title">Ayuda</span></a></li>
+                    <li><a href="#"><span class="icon" id="salir"><ion-icon name="close-circle-outline"></ion-icon></span><span class="title">Cerrar</span></a></li>
                 </ul>
-            </div>  
+            </div>
         </div>
     </div>
+
     <section>
         <div class="contenedor">
             <div class="panel-login">
@@ -71,10 +46,9 @@
         </div>
 
         <div class="panel-interfaz">
-            <!-- Contenido del nuevo panel -->
             <div class="cont-bienvenido">
                 <div class="welcome-message">
-                    <h1>Hola Leo!</h1>
+                    <h1>Hola Lucero!</h1>
                     <p>Es bueno verte de nuevo.</p>
                 </div>
                 <div class="welcome-image">
@@ -86,42 +60,31 @@
                 <div class="curso1" id="c1">
                     <h2>POO</h2>
                     <p>Java</p>
-
                 </div>
-                <div class="curso2" id = "c2">
+                <div class="curso2" id="c2">
                     <h2>Base de datos</h2>
                     <p>SQL Server</p>
                 </div>
-
-                <div class="curso3" id = "c3">
+                <div class="curso3" id="c3">
                     <h2>Programación Distribuida</h2>
                     <p>C#</p>
                 </div>
-
-                <div class="curso4" id = "c4">
+                <div class="curso4" id="c4">
                     <h2>Proyecto de Investigación</h2>
                     <p>Descripcion</p>
                 </div>
-
-                <div class="curso5" id = "c5">
+                <div class="curso5" id="c5">
                     <h2>Inglés </h2>
                     <p>Comunicación Interpersonal</p>
                 </div>
-
-                <div class="curso6" id = "c6">
+                <div class="curso6" id="c6">
                     <h2>Metodologías de Desarrollo</h2>
                     <p>Descripción</p>
                 </div>
             </div>
-
-
         </div>
 
         <div class="panel-curso">
-            <button id="btnExportar" class="btn btn-success">
-                <i class="fas fa-file-excel"></i> Exportar datos a Excel
-            </button>
-
             <div class="panelCurso1">
                 <h2>Tabla de Notas</h2>
                 <table id="tabla">
@@ -139,15 +102,13 @@
                             <td>14</td>
                             <td>13</td>
                             <td>12</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
                 <button id="btnanterior">Anterior</button>
             </div>
 
-            <div class="panelCurso2" >
+            <div class="panelCurso2">
                 <h2>Tabla de Notas</h2>
                 <table>
                     <thead>
@@ -164,14 +125,10 @@
                             <td>15</td>
                             <td>17</td>
                             <td>15</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
-
                 <button id="btnanterior2">Anterior</button>
-
             </div>
 
             <div class="panelCurso3">
@@ -191,15 +148,12 @@
                             <td>20</td>
                             <td>18</td>
                             <td>19</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
-
                 <button id="btnanterior3">Anterior</button>
-
             </div>
+
             <div class="panelCurso4">
                 <h2>Tabla de Notas</h2>
                 <table>
@@ -217,16 +171,12 @@
                             <td>14</td>
                             <td>19</td>
                             <td>15</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
-
                 <button id="btnanterior4">Anterior</button>
-
             </div>
-            
+
             <div class="panelCurso5">
                 <h2>Tabla de Notas</h2>
                 <table>
@@ -244,12 +194,9 @@
                             <td>12</td>
                             <td>18</td>
                             <td>15</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
-
                 <button id="btnanterior5">Anterior</button>
             </div>
 
@@ -270,58 +217,62 @@
                             <td>20</td>
                             <td>18</td>
                             <td>18</td>
-                                           
                         </tr>
-                       
                     </tbody>
                 </table>
-
                 <button id="btnanterior6">Anterior</button>
             </div>
 
-
-
-
-
+            <button id="btnExportar" class="btnexpo">
+                <i class="fas fa-file-excel"></i> Exportar Datos
+            </button>
         </div>
+
         <div class="panel-user">
             <div class="content">
-            <p class="inf">Nombres:</p>
-            <p>Lucero Margarita</p>
-            <p class="inf"">Apellidos: </p>
-            <p>Changra Mendoza</p>
-            <p class="inf">Programa de estudios:</p>
-            <p>Computación e Informática</p>
-            <p class="inf">Ciclo:</p>
-            <p>4to</p>
-            <p class="inf">Año de ingreso:</p>
-            <p>2022</p>
+                <p class="inf">Nombres:</p>
+                <p>Lucero Margarita</p>
+                <p class="inf">Apellidos: </p>
+                <p>Changra Mendoza</p>
+                <p class="inf">Programa de estudios:</p>
+                <p>Computación e Informática</p>
+                <p class="inf">Ciclo:</p>
+                <p>4to</p>
+                <p class="inf">Año de ingreso:</p>
+                <p>2022</p>
             </div>
             <h1>Perfil</h1>
             <img src="imagenes/user2.png" alt="cargando">
+        </div>
 
+        <div class="panel-estadistica">
+            <div class="reporte">
+                <h1> Reporte</h1>
+                <img src="imagenes/est.png">
+            </div>
         </div>
     </section>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="logica.js"></script>
 
-    <!-- script para exportar a excel -->
-<script>
-    const $btnExportar = document.querySelector("#btnExportar"),
-        $tabla = document.querySelector("#tabla");
+    <!-- Script para exportar a Excel -->
+    <script>
+        const $btnExportar = document.querySelector("#btnExportar"),
+            $tabla = document.querySelector("#tabla");
 
-    $btnExportar.addEventListener("click", function() {
-        let tableExport = new TableExport($tabla, {
-            exportButtons: false, // No queremos botones
-            filename: "Reporte de prueba", //Nombre del archivo de Excel
-            sheetname: "Reporte de prueba", //Título de la hoja
+        $btnExportar.addEventListener("click", function() {
+            let tableExport = new TableExport($tabla, {
+                exportButtons: false,
+                filename: "Reporte",
+                sheetname: "Reporte",
+            });
+            let datos = tableExport.getExportData();
+            let preferenciasDocumento = datos.tabla.xlsx;
+            tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
         });
-        let datos = tableExport.getExportData();
-        let preferenciasDocumento = datos.tabla.xlsx;
-        tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
-    });
-</script>
+    </script>
 </body>
 
 </html>
