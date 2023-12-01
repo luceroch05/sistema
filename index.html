@@ -87,13 +87,14 @@
         <div class="panel-curso">
             <div class="panelCurso1">
                 <h2>Tabla de Notas</h2>
-                <table id="tabla">
+                <table id="tablaCurso1">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
                             <th class="prom">Promedio</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -105,12 +106,12 @@
                         </tr>
                     </tbody>
                 </table>
-                <button id="btnanterior">Anterior</button>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso1')">➕</button>
             </div>
 
             <div class="panelCurso2">
                 <h2>Tabla de Notas</h2>
-                <table>
+                <table id="tablaCurso2">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
@@ -128,12 +129,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso2')">➕</button>
                 <button id="btnanterior2">Anterior</button>
             </div>
 
             <div class="panelCurso3">
                 <h2>Tabla de Notas</h2>
-                <table>
+                <table id="tablaCurso3">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
@@ -151,12 +153,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso3')">➕</button>
                 <button id="btnanterior3">Anterior</button>
             </div>
 
             <div class="panelCurso4">
                 <h2>Tabla de Notas</h2>
-                <table>
+                <table id="tablaCurso4">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
@@ -174,12 +177,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso4')">➕</button>
                 <button id="btnanterior4">Anterior</button>
             </div>
 
             <div class="panelCurso5">
                 <h2>Tabla de Notas</h2>
-                <table>
+                <table id="tablaCurso5">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
@@ -197,12 +201,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso5')">➕</button>
                 <button id="btnanterior5">Anterior</button>
             </div>
 
             <div class="panelCurso6">
                 <h2>Tabla de Notas</h2>
-                <table>
+                <table id="tablaCurso6">
                     <thead>
                         <tr>
                             <th>Unidad 1</th>
@@ -220,12 +225,21 @@
                         </tr>
                     </tbody>
                 </table>
+                <button onclick="mostrarFormularioAgregarNota('tablaCurso6')">➕</button>
                 <button id="btnanterior6">Anterior</button>
+            </div>
+            
+            <div id="formAgregarNota" style="display: none;">
+                <input type="number" id="notaUnidad1" placeholder="Nota Unidad 1">
+                <input type="number" id="notaUnidad2" placeholder="Nota Unidad 2">
+                <input type="number" id="notaExamenFinal" placeholder="Nota Examen Final">
+                <button onclick="agregarNota(idTablaActiva)">✅</button>
             </div>
 
             <button id="btnExportar" class="btnexpo">
                 <i class="fas fa-file-excel"></i> Exportar Datos
             </button>
+                <button id="btnanterior">Anterior</button>
         </div>
 
         <div class="panel-user">
