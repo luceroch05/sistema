@@ -327,3 +327,25 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 });
+
+document.getElementById('btnexp').addEventListener('click', function() {
+    var wb = XLSX.utils.book_new(); // Nuevo libro de trabajo
+    var ws_data = [['ID', 'Nombre', 'Asistencia']]; // Encabezados
+
+    var tbody = document.getElementById('tablaAlumnos').querySelector('tbody');
+    var filas = tbody.querySelectorAll('tr');
+
+    filas.forEach(function(fila) {
+        var id = fila.cells[0].innerText;
+        var nombre = fila.cells[1].innerText;
+        var checkbox = fila.querySelector('.asistencia');
+        var asistencia = checkbox && checkbox.checked ? 'Presente' : 'Ausente';
+
+        ws_data.push([id, nombre, asistencia]);
+    });
+
+    var ws = XLSX.utils.aoa_to_sheet(ws_data); // Crear hoja con los datos
+    XLSX.utils.book_append_sheet(wb, ws, "Asistencia"); // Añadir la hoja al libro
+
+    XLSX.writeFile(wb, 'Asistencia.xlsx'); // Escribir el archivo y descargar
+});

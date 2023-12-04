@@ -264,7 +264,7 @@ th, td {
     color: #333;
 }
 
-#btnanterior, #btnanterior2, #btnanterior3, #btnanterior4, #btnanterior5, #btnanterior6, #btnExportar, #login-button {
+#btnanterior, #btnanterior2, #btnanterior3, #btnanterior4, #btnanterior5, #btnanterior6, #btnExportar, #login-button, #btnexp {
     position: absolute;
     left: 55%;
     top: 70%;
@@ -284,7 +284,7 @@ th, td {
     cursor: pointer;
 }
 
-#btnanterior:hover, #btnanterior2:hover, #btnanterior3:hover, #btnanterior4:hover, #btnanterior5:hover, #btnanterior6:hover, #btnExportar:hover {
+#btnanterior:hover, #btnanterior2:hover, #btnanterior3:hover, #btnanterior4:hover, #btnanterior5:hover, #btnanterior6:hover, #btnExportar:hover, #btnexp {
     background-color: #ffffff;
     color: #000000;
 }
@@ -352,11 +352,15 @@ th, td {
     display: none;
 }
 
-.reporte {
-    background-color: red;
-}
+
 
 .asistencia{
     display: block;
     margin: auto;
+}
+
+#btnexp{
+    position: absolute;
+    left: 10%;
+    top: 10%;
 }

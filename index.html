@@ -287,6 +287,10 @@
             <div class="reporte">
 
                 <h2>Lista de Alumnos</h2>
+                
+            <button id="btnexp" class="btnexp">
+                <i class="fas fa-file-excel"></i> Exportar Datos
+            </button>
 
     <table id="tablaAlumnos">
         <thead>
@@ -308,11 +312,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="logica.js"></script>
 
-    <!-- Script para exportar a Excel -->
     <script>
         const $btnExportar = document.querySelector("#btnExportar"),
+        
             $tabla = document.querySelector("#tablaCurso1");
-
         $btnExportar.addEventListener("click", function() {
             let tableExport = new TableExport($tabla, {
                 exportButtons: false,
@@ -321,9 +324,12 @@
             });
             let datos = tableExport.getExportData();
             let preferenciasDocumento = datos.tablaCurso1.xlsx;
+            
             tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
         });
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
 </body>
 
 </html>
