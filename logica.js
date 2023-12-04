@@ -276,15 +276,54 @@ function agregarNota() {
     }
  }
 
-document.querySelectorAll('.asistencia').forEach(function(checkbox, index){
-    checkbox.addEventListener('change', function(){
-        localStorage.setItem('asistencia_' + index, checkbox.checked  ? 'presente' : 'falta');
-    });
-});
-
 document.addEventListener('DOMContentLoaded', function(){
-    document.querySelectorAll('.asistencia').forEach(function(checkbox, index){
-        var estadoAsistencia = localStorage.getItem('asistencia_' + index);
+    var alumnos = [
+        {id: 1, nombre: "Alviar Geronimo Juan Angel"},
+        {id: 2, nombre: "Anguiz Vargas Piero Andre"},
+        {id: 3, nombre: "Arteaga Ascencios Jhonny Aldair"},
+        {id: 4, nombre: "Bailón Púa Carlos Jeremy"},
+        {id: 5, nombre: "Berrocal Antonio Luis Gabriel"},
+        {id: 6, nombre: "Caceres Carrasco Ruben Alessandro"},
+        {id: 7, nombre: "Campos Leon Jadyra"},
+        {id: 8, nombre: "Ccoyllo Borja Moises Segundo"},
+        {id: 9, nombre: "Celada Huayhua Jose Alberto"},
+        {id: 10, nombre: "Changra Mendoza Lucero Margarita"},
+        {id: 11, nombre: "Chauca Morales David Octavio"},
+        {id: 12, nombre: "Cuadros Gaviria Anderson D."},
+        {id: 13, nombre: "Garamendi Huaman Belén S"},
+        {id: 14, nombre: "Jaramillo Baylon Lucero"},
+        {id: 15, nombre: "Lozano Morales Jefferson Brayhan"},
+        {id: 16, nombre: "Medrano Bravo Benjamin"},
+        {id: 17, nombre: "Morales Medina Lyzbeth Kristel"},
+        {id: 18, nombre: "Mucha Delgadillo Jeremy Patrick"},
+        {id: 19, nombre: "Pizarro Bordoy Jorge Leonardo"},
+        {id: 20, nombre: "Puma Castillo Fernando Nicolas"},
+        {id: 21, nombre: "Ramirez Herrera Deyanira O"},
+        {id: 22, nombre: "Ramos Soto Reiner Harriet J"},
+        {id: 23, nombre: "Suarez Sotteccani Gian Franco"},
+        {id: 24, nombre: "Toscano Marcelo Kevin Edu"},
+        {id: 25, nombre: "Velasquez Rampas Greys Rous"},
+        {id: 26, nombre: "Zorrilla Espinoza John Santos"}
+    ];
+
+    var tbody = document.getElementById('tablaAlumnos').querySelector('tbody');
+
+    alumnos.forEach(function(alumno){
+        var fila = tbody.insertRow();
+        fila.insertCell().textContent = alumno.id;
+        fila.insertCell().textContent = alumno.nombre;
+
+        var celdaAsistencia = fila.insertCell();
+        var checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.className = 'asistencia';
+        celdaAsistencia.appendChild(checkbox);
+
+        var estadoAsistencia = localStorage.getItem('asistencia_' + alumno.id);
         checkbox.checked = estadoAsistencia === 'presente';
+
+        checkbox.addEventListener('change', function(){
+            localStorage.setItem('asistencia_' + alumno.id, checkbox.checked ? 'presente' : 'falta');
+        });
     });
 });
