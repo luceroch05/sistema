@@ -212,45 +212,49 @@ function crearNota(){
     document.getElementById("nuevaNotaForm").style.display = "block";
 }
 
-function agregarNota(){
-
+function agregarNota() {
     var tabla = document.getElementById(idTablaActiva);
     var tbody = tabla.getElementsByTagName('tbody')[0];
     var nuevaFila = tbody.insertRow();
 
-    var notaUnidad1 = document.getElementById("notaUnidad1").value || 0;
-    var notaUnidad2 = document.getElementById("notaUnidad2").value || 0;
-    var notaExamenFinal = document.getElementById("notaExamenFinal").value || 0;
-    var promedio = (parseFloat(notaUnidad1) + parseFloat(notaUnidad2) + parseFloat(notaExamenFinal)) / 3;
-    nuevaFila.insertCell(0).innerText = notaUnidad1;
-    nuevaFila.insertCell(1).innerText = notaUnidad2;
-    nuevaFila.insertCell(2).innerText = notaExamenFinal;
-    nuevaFila.insertCell(3).innerText = promedio.toFixed(2);
-    var acciones = nuevaFila.insertCell(4);
+    var nombreAlumno = document.getElementById("nombreAlumno").value || 0;
+    var notaUnidad1 = parseFloat(document.getElementById("notaUnidad1").value) || 0;
+    var notaUnidad2 = parseFloat(document.getElementById("notaUnidad2").value) || 0;
+    var notaExamenFinal = parseFloat(document.getElementById("notaExamenFinal").value) || 0;
+    var promedio = (notaUnidad1 + notaUnidad2 + notaExamenFinal) / 3;
+
+    nuevaFila.insertCell(0).innerText = nombreAlumno;
+    nuevaFila.insertCell(1).innerText = notaUnidad1;
+    nuevaFila.insertCell(2).innerText = notaUnidad2;
+    nuevaFila.insertCell(3).innerText = notaExamenFinal;
+    nuevaFila.insertCell(4).innerText = promedio.toFixed(2);
+
+    // Corregido: la última celda debería tener índice 5
+    var acciones = nuevaFila.insertCell(5);
     acciones.innerHTML = '<button onclick="editarNota(this)">✏️</button> <button onclick="eliminarNota(this)">⛔</button>';
 
     document.getElementById("formAgregarNota").style.display = "none";
- }
+}
 
  function editarNota(btn){
     var fila = btn.parentNode.parentNode;
     var celdas = fila.getElementsByTagName('td');
 
-    for(let i = 0; i < 3; i++){
+    for(let i = 1; i < 4; i++){
         let valorActual = celdas[i].innerText;
-        let nuevoValor = prompt(`Editar la nota (Unidad ${i + 1}):`, valorActual);
+        let nuevoValor = prompt(`Editar la nota (Unidad ${i}):`, valorActual);
         if(nuevoValor !== null && nuevoValor.trim() !== '' && !isNaN(nuevoValor)){
             celdas[i].innerText = nuevoValor;
         }
     }
 
     var sumaNotas = 0;
-    for(let i = 0; i < 3; i++){
+    for(let i = 1; i < 4; i++){
         sumaNotas += parseFloat(celdas[i].innerText);
     }
 
     var promedio = sumaNotas / 3;
-    celdas[3].innerText = promedio.toFixed(2);
+    celdas[4].innerText = promedio.toFixed(2);
  }
 
  function eliminarNota(btn){
