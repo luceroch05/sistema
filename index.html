@@ -116,6 +116,8 @@
                 <table id="tablaCurso2">
                     <thead>
                         <tr>
+                            <th>Alumno</th>
+
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
@@ -124,6 +126,9 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td> Lucero Changra</td>
+
+
                             <td>16</td>
                             <td>15</td>
                             <td>17</td>
@@ -140,6 +145,8 @@
                 <table id="tablaCurso3">
                     <thead>
                         <tr>
+                            <th>Alumno</th>
+
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
@@ -148,6 +155,7 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Jeremy Bailon</td>
                             <td>19</td>
                             <td>20</td>
                             <td>18</td>
@@ -164,6 +172,8 @@
                 <table id="tablaCurso4">
                     <thead>
                         <tr>
+                            <th>Alumno</th>
+
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
@@ -172,6 +182,9 @@
                     </thead>
                     <tbody>
                         <tr>
+                       
+                            <td>Fernando Puma</td>
+
                             <td>14</td>
                             <td>14</td>
                             <td>19</td>
@@ -188,6 +201,8 @@
                 <table id="tablaCurso5">
                     <thead>
                         <tr>
+                            <th>Alumno</th>
+
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
@@ -196,6 +211,8 @@
                     </thead>
                     <tbody>
                         <tr>
+                            <td>Steven Torres</td>
+
                             <td>11</td>
                             <td>12</td>
                             <td>18</td>
@@ -212,6 +229,8 @@
                 <table id="tablaCurso6">
                     <thead>
                         <tr>
+                            <th>Alumno</th>
+
                             <th>Unidad 1</th>
                             <th>Unidad 2</th>
                             <th>Examen Final</th>
@@ -220,10 +239,12 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>17</td>
-                            <td>20</td>
-                            <td>18</td>
-                            <td>18</td>
+                            <td>Jhonny Arteaga</td>
+
+                            <td>11</td>
+                            <td>10</td>
+                            <td>06</td>
+                            <td>10</td>
                         </tr>
                     </tbody>
                 </table>
@@ -264,8 +285,32 @@
 
         <div class="panel-estadistica">
             <div class="reporte">
-                <h1> Reporte</h1>
-                <img src="imagenes/est.png">
+
+                <h2>Lista de Alumnos</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre del Alumno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane Smith</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Michael Johnson</td>
+            </tr>
+        </tbody>
+    </table>
+
             </div>
         </div>
     </section>
@@ -277,7 +322,7 @@
     <!-- Script para exportar a Excel -->
     <script>
         const $btnExportar = document.querySelector("#btnExportar"),
-            $tabla = document.querySelector("#tabla");
+            $tabla = document.querySelector("#tablaCurso1");
 
         $btnExportar.addEventListener("click", function() {
             let tableExport = new TableExport($tabla, {
@@ -286,7 +331,7 @@
                 sheetname: "Reporte",
             });
             let datos = tableExport.getExportData();
-            let preferenciasDocumento = datos.tabla.xlsx;
+            let preferenciasDocumento = datos.tablaCurso1.xlsx;
             tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
         });
     </script>

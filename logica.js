@@ -190,13 +190,14 @@ document.getElementById("salir").addEventListener('click', function() {
 });
 
 
-document.getElementById("estadistica").addEventListener('click', function() {
+document.getElementById("estadisticas").addEventListener('click', function() {
+    document.querySelector(".cont-bienvenido").style.display = "none"; 
     document.querySelector(".cursos-container").style.display = "none";
-    document.querySelector(".panel-interfaz").style.display = "none";
-    document.querySelector(".panel-curso").style.display = "none";
-    document.querySelector(".panel-user").style.display = "none";
     document.querySelector(".panel-estadistica").style.display = "block";
     document.querySelector(".reporte").style.display = "block";
+    document.querySelector(".panel-curso").style.display = "none";
+    document.querySelector(".panel-user").style.display = "none";
+
 
 
 });
