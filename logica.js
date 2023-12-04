@@ -264,3 +264,16 @@ function agregarNota() {
         fila.parentNode.removeChild(fila);
     }
  }
+
+document.querySelectorAll('.asistencia').forEach(function(checkbox, index){
+    checkbox.addEventListener('change', function(){
+        localStorage.setItem('asistencia_' + index, checkbox.checked  ? 'presente' : 'falta');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.asistencia').forEach(function(checkbox, index){
+        var estadoAsistencia = localStorage.getItem('asistencia_' + index);
+        checkbox.checked = estadoAsistencia === 'presente';
+    });
+});

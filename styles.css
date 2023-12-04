@@ -355,3 +355,8 @@ th, td {
 .reporte {
     background-color: red;
 }
+
+.asistencia{
+    display: block;
+    margin: auto;
+}
